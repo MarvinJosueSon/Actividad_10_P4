@@ -5,11 +5,11 @@ def contarDigitos(numero):
         return 1+contarDigitos(numero//10)
 
 def sumarDigitos(numero):
-    if numero<=0:
-        return numero
+    if numero <= 0:
+        return 0
     else:
-        return 1+sumarDigitos(numero%10)
-        numero=numero//10
+        return numero % 10 + sumarDigitos(numero // 10)
+
 
 def imprimirCuentaRegresiva(numero):
     if numero<=0:
